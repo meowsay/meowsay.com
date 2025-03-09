@@ -100,7 +100,8 @@ export function GamePage () {
                 Meowsay Games © {new Date().getFullYear()}
               </span>
             </div>
-            <p className="text-lg text-indigo-200">猫语星球游研社</p>
+            <p className="text-lg text-indigo-200">猫语星球游研社 | meowsaygames@outlook.com</p>
+            {/* <p className="text-lg text-indigo-200">meowsaygames@outlook.com</p>  */}
           </div>
         </div>
       </footer>
