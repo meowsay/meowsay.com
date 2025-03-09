@@ -81,7 +81,8 @@ function App() {
             <div className="max-w-3xl mx-auto space-y-4 mt-8">
               <p className="text-xl text-indigo-200 leading-relaxed">
                 Immerse yourself in the world of gaming with Meowsay Games, the
-                leading Game Studio in Shanghai.
+                leading Game Studio in Shanghai. Embark on epic journeys through
+                our meticulously crafted gaming universes
               </p>
             </div>
           </div>
@@ -94,13 +95,9 @@ function App() {
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
             Featured Games
           </h2>
-          <p className="text-xl text-indigo-200 max-w-2xl mx-auto">
-            Embark on epic journeys through our meticulously crafted gaming
-            universes
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {games.map((game) => (
             <div
               key={game.id}
