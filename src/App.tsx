@@ -128,7 +128,7 @@ function App() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-12">
           {games.map((game) => (
             <div
               key={game.id}
@@ -156,6 +156,7 @@ function App() {
                   {game.tags}
                 </p>
 
+                
                 <div className="flex gap-4">
                   <a
                     href={game.androidUrl}
@@ -172,6 +173,7 @@ function App() {
                     <span>iOS</span>
                   </a>
                 </div>
+                  
               </div>
             </div>
           ))}
