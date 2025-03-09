@@ -16,9 +16,22 @@ interface Game {
   image: string;
   androidUrl: string;
   iosUrl: string;
+  androidTxt: string;
+  iosTxt: string
 }
 
 const games: Game[] = [
+  {
+    id: 'yiluoyuye',
+    title: '遗落雨夜',
+    description: `蓝星崩塌，暴雨肆虐，异变丛生——超能觉醒或沦为丧尸，文明尽毁，生存至上！在这末世放置挂机游戏中，探索未知废土，建造庇护堡垒，种田自给自足，揭开灾变之谜。剧情扣人心弦，玩法丰富多样，你能否重塑秩序，书写传奇？现在加入，开启你的末世生存冒险！`,
+    tags: '#末世 #放置 #探索 #建造 #丧尸',
+    image: 'images/yiluoyuye.jpg',
+    androidUrl: '#',
+    iosUrl: '#',
+    androidTxt: '敬请期待',
+    iosTxt: '敬请期待'
+  },
   {
     id: 'efotuo2',
     title: '善恶启示录2',
@@ -27,6 +40,8 @@ const games: Game[] = [
     image: 'images/efotuo2.jpg',
     androidUrl: 'https://www.taptap.cn/app/730757',
     iosUrl: '#',
+    androidTxt: 'Android 预约',
+    iosTxt: '敬请期待'
   },
   {
     id: 'tkingdom',
@@ -37,6 +52,8 @@ const games: Game[] = [
     image: 'images/tkingdom.jpg',
     androidUrl: 'https://www.taptap.cn/app/619248',
     iosUrl: 'https://apps.apple.com/app/id6553994545',
+    androidTxt: 'Android',
+    iosTxt: 'iOS'
   },
   {
     id: 'diaohai2',
@@ -47,6 +64,8 @@ const games: Game[] = [
     image: 'images/diaohai2.png',
     androidUrl: 'https://www.taptap.cn/app/378988',
     iosUrl: 'https://apps.apple.com/app/id6475666748',
+    androidTxt: 'Android',
+    iosTxt: 'iOS'
   },
   {
     id: 'yijingqishilu',
@@ -57,6 +76,8 @@ const games: Game[] = [
     image: 'images/yjqsl.png',
     androidUrl: 'https://l.taptap.cn/jTuAtltD?channel=rep-rep_ofz0wkufo0t',
     iosUrl: '#',
+    androidTxt: 'Android',
+    iosTxt: '敬请期待'
   },
   {
     id: 'efotuo',
@@ -66,8 +87,9 @@ const games: Game[] = [
     tags: '#冥界 #魂魄 #建造',
     image: 'images/efotuo.png',
     androidUrl: 'https://tap.cn/WkO9SXvM?channel=rep-rep_ayx7lus55zu',
-    iosUrl:
-      'https://apps.apple.com/us/app/%E5%96%84%E6%81%B6%E5%90%AF%E7%A4%BA%E5%BD%95/id1661607620?platform=iphone',
+    iosUrl: 'https://apps.apple.com/us/app/%E5%96%84%E6%81%B6%E5%90%AF%E7%A4%BA%E5%BD%95/id1661607620?platform=iphone',
+    androidTxt: 'Android',
+    iosTxt: 'iOS'
   },
   {
     id: 'diaohai',
@@ -78,6 +100,8 @@ const games: Game[] = [
     image: 'images/fishing.png',
     androidUrl: 'https://tap.cn/ajmHSTsE?channel=rep-rep_aii3ed3ta85',
     iosUrl: '#',
+    androidTxt: 'Android',
+    iosTxt: '敬请期待'
   },
 ];
 
@@ -112,9 +136,14 @@ function App() {
             <div className="max-w-3xl mx-auto space-y-4 mt-8">
               <p className="text-xl text-indigo-200 leading-relaxed">
                 Immerse yourself in the world of gaming with Meowsay Games, the
-                leading Game Studio in Shanghai. Embark on epic journeys through
+                leading Game Studio in Shanghai. <br></br>Embark on epic journeys through
                 our meticulously crafted gaming universes.
               </p>
+
+              {/* <p className="text-xl text-indigo-200 leading-relaxed">
+              让自己沉浸在游戏世界中，与上海领先的游戏工作室 Meowsay Games 一起。通过我们精心打造的游戏宇宙，踏上史诗般的旅程。
+              </p> */}
+
             </div>
           </div>
         </div>
@@ -140,7 +169,7 @@ function App() {
                   alt={game.title}
                   className="w-full h-72 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080B14] via-[#080B14]/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080B14] via-[#080B14]/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <h3 className="text-3xl font-bold text-shadow">
                     {game.title}
@@ -163,14 +192,14 @@ function App() {
                     className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-violet-500 py-4 px-6 rounded-xl font-medium hover:from-indigo-600 hover:to-violet-600 transition-all duration-300 shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30"
                   >
                     <AndroidLogo className="h-5 w-5" />
-                    <span>Android</span>
+                    <span>{game.androidTxt}</span>
                   </a>
                   <a
                     href={game.iosUrl}
                     className="flex-1 flex items-center justify-center gap-2 bg-[#1F2937] py-4 px-6 rounded-xl font-medium hover:bg-[#1a232d] transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/30 border border-indigo-500/20"
                   >
                     <AppleLogo className="h-5 w-5" />
-                    <span>iOS</span>
+                    <span>{game.iosTxt}</span>
                   </a>
                 </div>
                   
