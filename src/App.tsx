@@ -12,6 +12,7 @@ interface Game {
   id: string;
   title: string;
   description: string;
+  tags: string;
   image: string;
   androidUrl: string;
   iosUrl: string;
@@ -19,33 +20,63 @@ interface Game {
 
 const games: Game[] = [
   {
-    id: 'idle-cat-empire',
-    title: 'Idle Cat Empire',
-    description:
-      'Build your feline empire from a single kitten to a vast network of purring productivity. Manage resources, unlock new cat breeds, and become the ultimate cat entrepreneur!',
-    image:
-      'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80',
-    androidUrl: '#',
+    id: 'efotuo2',
+    title: '善恶启示录2',
+    description: `在地狱里培养灵魂，获得功德或罪恶。向伟大，未知的存在启示，祈祷祂的赠予。掀开世界的角落，这里藏着你需要的秘密。踏上征程，面向所有的答案。命运的馈赠全部标明代价。`,
+    tags: '#放置 #魂魄 #恶魔',
+    image: 'images/efotuo2.jpg',
+    androidUrl: 'https://www.taptap.cn/app/730757',
     iosUrl: '#',
   },
   {
-    id: 'pixel-pet-tycoon',
-    title: 'Pixel Pet Tycoon',
+    id: 'tkingdom',
+    title: '异世界废物摆烂崛起之无限启灵',
     description:
-      'Create and manage your virtual pet shop in this charming pixel-art idle game. Breed rare pets, customize your shop, and make your customers happy!',
-    image:
-      'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80',
-    androidUrl: '#',
+      '你因为过度熬夜，在有一天晚上终于如愿以偿猝死了。当时你正在准备下载一个叫《异世界废物摆烂崛起之无限启灵》的游戏，所以你因此被一股神奇的力量拉进了这个游戏的世界，并意外觉醒了启灵骷髅的能力。',
+    tags: '#放置 #异世界 #种田 #摆烂 #建造',
+    image: 'images/tkingdom.jpg',
+    androidUrl: 'https://www.taptap.cn/app/619248',
+    iosUrl: 'https://apps.apple.com/app/id6553994545',
+  },
+  {
+    id: 'diaohai2',
+    title: '钓海2',
+    description:
+      '垂钓，钓竿，鱼饵，渔网，渔业市场，垂钓协会，召唤，眷者，对战，阴暗背景，克苏鲁，大航海，种田，国王，池塘。新时代下隐秘的角落，潜藏的命运在诞生时已经注定。',
+    tags: '#垂钓 #航海 #放置',
+    image: 'images/diaohai2.png',
+    androidUrl: 'https://www.taptap.cn/app/378988',
+    iosUrl: 'https://apps.apple.com/app/id6475666748',
+  },
+  {
+    id: 'yijingqishilu',
+    title: '异境启示录',
+    description:
+      '在末世废墟中觉醒，求生与超能共舞。地球，原本是一个繁荣与和平并存的美丽星球。然而，一场突如其来的灾难打破了这一切——一颗巨大的陨石撞击地球，释放出致命的病毒和辐射，迅速蔓延全球。人类文明在这场灾难中几乎毁灭殆尽，世界陷入了无尽的混乱与黑暗。',
+    tags: '#末世 #探索 #放置',
+    image: 'images/yjqsl.png',
+    androidUrl: 'https://l.taptap.cn/jTuAtltD?channel=rep-rep_ofz0wkufo0t',
     iosUrl: '#',
   },
   {
-    id: 'pixel-pet-tycoon',
-    title: 'Pixel Pet Tycoon',
+    id: 'efotuo',
+    title: '善恶启示录',
     description:
-      'Create and manage your virtual pet shop in this charming pixel-art idle game. Breed rare pets, customize your shop, and make your customers happy!',
-    image:
-      'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80',
-    androidUrl: '#',
+      '开局一只小破鬼，获取资源全靠等。在这里，你目之所及的对手是，神圣西天大雷音帮帮主，如林-加特来，阿弥陀佛，施主，该上路了。宇宙超级英雄-咏春叶问，我要打十个！只因门门主-坤太美，你干嘛！哎呦！超级双料特工-鸡汤甲 鸡汤来喽！沙城一霸-龙叔，爆率真的高，布灵布灵的！地摊瓜太保-刘强哥，你这游戏保熟吗?',
+    tags: '#冥界 #魂魄 #建造',
+    image: 'images/efotuo.png',
+    androidUrl: 'https://tap.cn/WkO9SXvM?channel=rep-rep_ayx7lus55zu',
+    iosUrl:
+      'https://apps.apple.com/us/app/%E5%96%84%E6%81%B6%E5%90%AF%E7%A4%BA%E5%BD%95/id1661607620?platform=iphone',
+  },
+  {
+    id: 'diaohai',
+    title: '无量：钓海',
+    description:
+      '这是一款休闲回合战斗类游戏。虽然画风稀碎，但在这一个不公平的世界里面，只要你有功德，无限道具叠加属性，什么小怪，最终boss，统统滚开！',
+    tags: '#垂钓 #航海 #剧情 #放置',
+    image: 'images/fishing.png',
+    androidUrl: 'https://tap.cn/ajmHSTsE?channel=rep-rep_aii3ed3ta85',
     iosUrl: '#',
   },
 ];
@@ -82,7 +113,7 @@ function App() {
               <p className="text-xl text-indigo-200 leading-relaxed">
                 Immerse yourself in the world of gaming with Meowsay Games, the
                 leading Game Studio in Shanghai. Embark on epic journeys through
-                our meticulously crafted gaming universes
+                our meticulously crafted gaming universes.
               </p>
             </div>
           </div>
@@ -121,20 +152,24 @@ function App() {
                   {game.description}
                 </p>
 
+                <p className="text-indigo-200 text-md leading-relaxed mb-8">
+                  {game.tags}
+                </p>
+
                 <div className="flex gap-4">
                   <a
                     href={game.androidUrl}
                     className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-violet-500 py-4 px-6 rounded-xl font-medium hover:from-indigo-600 hover:to-violet-600 transition-all duration-300 shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30"
                   >
                     <AndroidLogo className="h-5 w-5" />
-                    <span>Play on Android</span>
+                    <span>Android</span>
                   </a>
                   <a
                     href={game.iosUrl}
                     className="flex-1 flex items-center justify-center gap-2 bg-[#1F2937] py-4 px-6 rounded-xl font-medium hover:bg-[#1a232d] transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/30 border border-indigo-500/20"
                   >
                     <AppleLogo className="h-5 w-5" />
-                    <span>Play on iOS</span>
+                    <span>iOS</span>
                   </a>
                 </div>
               </div>
