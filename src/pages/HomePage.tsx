@@ -23,12 +23,14 @@ export function HomePage () {
           <div className="container mx-auto px-4 pt-16 pb-24">
             <div className="flex flex-col items-center text-center space-y-8">
               <div className="animate-float">
-                <div className="flex items-center gap-4 bg-[#111827]/80 p-6 rounded-2xl backdrop-blur-lg border border-indigo-500/20 shadow-xl shadow-indigo-500/10">
-                  <Cat className="h-16 w-16 text-indigo-400" />
+                {/* <div className="flex items-center gap-4 bg-[#111827]/80 p-6 rounded-2xl backdrop-blur-lg border border-indigo-500/20 shadow-xl shadow-indigo-500/10"> */}
+                <div className="flex items-center gap-4  p-6 rounded-2xl">
+                  {/* <Cat className="h-16 w-16 text-indigo-400" /> */}
                   <div>
-                    <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
+                    {/* <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
                       Meowsay Games
-                    </h1>
+                    </h1> */}
+                    <img src="../logoh.png" alt="Meowsay Games" className="h-40" />
                   </div>
                 </div>
               </div>
