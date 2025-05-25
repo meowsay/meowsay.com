@@ -53,6 +53,12 @@ export function HomePage () {
                 {/* <p className="text-xl text-indigo-200 leading-relaxed">
                 让自己沉浸在游戏世界中，与上海领先的游戏工作室 Meowsay Games 一起。通过我们精心打造的游戏宇宙，踏上史诗般的旅程。
                 </p> */}
+
+                <br></br>
+
+                <p>
+                 爱发电支持：https://afdian.com/a/fishinggod 
+                </p>
   
               </div>
             </div>
