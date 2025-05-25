@@ -57,7 +57,7 @@ export function HomePage () {
                 <br></br>
 
                 <p>
-                 爱发电支持：https://afdian.com/a/fishinggod 
+                 <strong>爱发电支持：https://afdian.com/a/meowsaygames </strong>
                 </p>
   
               </div>

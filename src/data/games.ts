@@ -11,6 +11,17 @@ export interface Game {
   }
   
 export const games: Game[] = [
+  {
+      id: 'fishinggod',
+      title: '钓鱼佬垂钓万界',
+      description: `一个钓鱼游戏，如何变成跨越万界的奇幻旅程？ 一根钓竿，怎么能钓出命运、真理，甚至未来的自己？你能否将所有位面碎片拼回原初的宇宙？欢迎登船，开启你的垂钓万界之旅。`,
+      tags: '#垂钓 #放置 #探索 #建造',
+      image: '../images/fishinggod.jpg',
+      androidUrl: '#',
+      iosUrl: '#',
+      androidTxt: '敬请期待',
+      iosTxt: '敬请期待'
+    },
     {
       id: 'yiluoyuye',
       title: '遗落雨夜',
