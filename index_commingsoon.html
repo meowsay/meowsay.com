@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comming Soon</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111111;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b0c0f;
+                --text: #f2f3f5;
+            }
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-blob {
+            position: absolute;
+            inset: -20% -30% auto -30%;
+            height: 70vh;
+            filter: blur(80px) saturate(120%);
+            opacity: 0.6;
+            z-index: -2;
+            background:
+                radial-gradient(40% 60% at 20% 30%, rgba(59, 130, 246, 0.35), transparent 60%),
+                radial-gradient(35% 55% at 70% 40%, rgba(16, 185, 129, 0.35), transparent 60%),
+                radial-gradient(30% 50% at 50% 70%, rgba(236, 72, 153, 0.28), transparent 60%);
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: clamp(32px, 6vw, 64px);
+            letter-spacing: -0.02em;
+            margin: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-blob" aria-hidden="true"></div>
+    <h1>Comming Soon.</h1>
+</body>
+
+</html>

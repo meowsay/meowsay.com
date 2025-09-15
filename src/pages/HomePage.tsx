@@ -38,7 +38,7 @@ export function HomePage () {
               <div className="flex items-center gap-3 bg-[#111827]/80 px-8 py-4 rounded-full backdrop-blur-sm border border-indigo-500/20 shadow-lg shadow-indigo-500/10">
                 <Gamepad2 className="h-6 w-6 text-indigo-400" />
                 <span className="text-xl font-medium text-shadow">
-                  “猫语星球游研社”，探索文字游戏的边界！
+                  “Meowsay Games”，探索文字游戏的边界！
                 </span>
                 <Trophy className="h-6 w-6 text-amber-400" />
               </div>
@@ -138,7 +138,7 @@ export function HomePage () {
                   Meowsay Games © {new Date().getFullYear()}
                 </span>
               </div>
-              <p className="text-lg text-indigo-200">猫语星球游研社 | meowsaygames@outlook.com</p>
+              <p className="text-lg text-indigo-200">Shanghai Meowsay Technology Co., Ltd. | meowsaygames@outlook.com</p>
             </div>
           </div>
         </footer>
