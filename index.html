@@ -1,19 +1,453 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-  <link rel="icon" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meowsay Games</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3110170387295963"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowsay Games - Independent Game Studio</title>
+    <meta name="description"
+        content="Meowsay Games is an independent game studio creating engaging gaming experiences for global audiences.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/meowsay.svg">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <!-- Navigation Progress Bar -->
+        <div class="nav-progress-bar" id="navProgressBar"></div>
+
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/meowsay.svg" alt="Meowsay Games" class="nav-logo pulsing-logo">
+                <span class="nav-title">Meowsay Games</span>
+                <!-- Experience Points Display -->
+                <div class="nav-xp" id="navXP">
+                    <span class="xp-label">🎮</span>
+                    <span class="xp-value">LV.1</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#games" class="nav-link" data-section="games">
+                    <span class="nav-icon">🎮</span>
+                    <span class="nav-text">Games</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <span class="nav-icon">ℹ️</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span class="nav-icon">📧</span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle gaming-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="toggle-glow"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background -->
+        <div class="hero-background">
+            <canvas id="particleCanvas" class="particle-canvas"></canvas>
+            <div class="floating-elements">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape shape-4"></div>
+            </div>
+        </div>
+
+        <!-- Mouse Follow Effect -->
+        <div class="mouse-follower" id="mouseFollower"></div>
+
+        <div class="hero-content">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Crafting <span class="hero-title-highlight glitch-text">exceptional</span> gaming experiences
+                    </h1>
+                    <p class="hero-description fade-in-up">
+                        We're Meowsay Games, an independent studio focused on creating engaging, memorable games that
+                        bring joy to players around the world.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#games" class="btn btn-primary btn-lg btn-game-style">🎮 Explore Our Games</a>
+                        <a href="#about" class="btn btn-secondary btn-lg btn-game-style">✨ Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Games Released</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100000">0</span>
+                            <span class="stat-label">Happy Players</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="95">0%</span>
+                            <span class="stat-label">Satisfaction Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-logo-container animated-logo">
+                        <img src="assets/meowsay.svg" alt="Meowsay Games Logo" class="hero-logo pulsing-logo">
+                        <div class="logo-glow"></div>
+                        <div class="logo-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section - Enhanced -->
+    <section id="games" class="games">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Games</h2>
+                <p class="section-subtitle">Discover our collection of carefully crafted gaming experiences, each
+                    designed to deliver engaging and memorable gameplay.</p>
+            </div>
+
+            <div class="games-content">
+                <!-- Loading Animation -->
+                <div class="games-loading" id="gamesLoading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading awesome games...</p>
+                </div>
+
+                <!-- Games Grid -->
+                <div id="games-grid" class="games-grid">
+                    <!-- Games will be loaded dynamically from config/games.json -->
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">🎯</div>
+                    <h3>No games found</h3>
+                    <p>Try adjusting your filters or search terms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Gamified -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Meowsay Games</h2>
+                <p class="section-subtitle">We're an independent game studio focused on creating engaging experiences
+                    that bring joy to players worldwide.</p>
+            </div>
+
+            <!-- Studio Stats Dashboard -->
+            <div class="studio-dashboard">
+                <div class="dashboard-header">
+                    <h3>🎮 Studio Level: <span class="studio-level">Professional</span></h3>
+                    <div class="xp-bar">
+                        <div class="xp-fill" data-width="85"></div>
+                        <span class="xp-text">8500 / 10000 XP</span>
+                    </div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card" data-achievement="games">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-info">
+                            <span class="achievement-number" data-target="12">0</span>
+                            <span class="achievement-label">Games Developed</span>
+                        </div>
+                        <div class="achievement-progress">
+                            <div class="progress-circle" data-progress="80">
+                                <svg viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" stroke="rgba(124, 58, 237, 0.2)" stroke-width="2"
+                                        fill="none" />
+                                    <circle cx="18" cy="18" r="16" stroke="var(--primary-purple)" stroke-width="2"
+                                        fill="none" stroke-dasharray="80 20" stroke-dashoffset="25"
+                                        transform="rotate(-90 18 18)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" data-achievement="players">
+                        <div class="achievement-icon">👥</div>
+                        <div class="achievement-info">
+                            <span class="achievement-number" data-target="250000">0</span>
+                            <span class="achievement-label">Active Players</span>
+                        </div>
+                        <div class="achievement-progress">
+                            <div class="progress-circle" data-progress="65">
+                                <svg viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" stroke="rgba(16, 185, 129, 0.2)" stroke-width="2"
+                                        fill="none" />
+                                    <circle cx="18" cy="18" r="16" stroke="var(--neon-green)" stroke-width="2"
+                                        fill="none" stroke-dasharray="65 35" stroke-dashoffset="25"
+                                        transform="rotate(-90 18 18)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" data-achievement="rating">
+                        <div class="achievement-icon">⭐</div>
+                        <div class="achievement-info">
+                            <span class="achievement-number" data-target="4.8">0</span>
+                            <span class="achievement-label">Average Rating</span>
+                        </div>
+                        <div class="achievement-progress">
+                            <div class="progress-circle" data-progress="96">
+                                <svg viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" stroke="rgba(251, 191, 36, 0.2)" stroke-width="2"
+                                        fill="none" />
+                                    <circle cx="18" cy="18" r="16" stroke="var(--electric-yellow)" stroke-width="2"
+                                        fill="none" stroke-dasharray="96 4" stroke-dashoffset="25"
+                                        transform="rotate(-90 18 18)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card" data-achievement="downloads">
+                        <div class="achievement-icon">📱</div>
+                        <div class="achievement-info">
+                            <span class="achievement-number" data-target="500000">0</span>
+                            <span class="achievement-label">Total Downloads</span>
+                        </div>
+                        <div class="achievement-progress">
+                            <div class="progress-circle" data-progress="75">
+                                <svg viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" stroke="rgba(236, 72, 153, 0.2)" stroke-width="2"
+                                        fill="none" />
+                                    <circle cx="18" cy="18" r="16" stroke="var(--cyber-pink)" stroke-width="2"
+                                        fill="none" stroke-dasharray="75 25" stroke-dashoffset="25"
+                                        transform="rotate(-90 18 18)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card enhanced-card">
+                        <div class="about-icon-wrapper">
+                            <div class="about-icon">🎯</div>
+                            <div class="about-icon-bg"></div>
+                        </div>
+                        <h3>Player-Focused Design</h3>
+                        <p>Every game is designed with the player experience at the center, ensuring intuitive gameplay
+                            and meaningful engagement that keeps players coming back.</p>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="progress-label">Player Satisfaction: 95%</span>
+                        </div>
+                    </div>
+                    <div class="about-card enhanced-card">
+                        <div class="about-icon-wrapper">
+                            <div class="about-icon">✨</div>
+                            <div class="about-icon-bg"></div>
+                        </div>
+                        <h3>Quality & Polish</h3>
+                        <p>We prioritize attention to detail and technical excellence, delivering high-quality gaming
+                            experiences that meet the highest standards across all platforms.</p>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                            <span class="progress-label">Quality Score: 92%</span>
+                        </div>
+                    </div>
+                    <div class="about-card enhanced-card">
+                        <div class="about-icon-wrapper">
+                            <div class="about-icon">🌍</div>
+                            <div class="about-icon-bg"></div>
+                        </div>
+                        <h3>Global Community</h3>
+                        <p>Our games are crafted to resonate with diverse audiences worldwide, fostering inclusive
+                            gaming communities that transcend cultural boundaries.</p>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                            <span class="progress-label">Global Reach: 88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Gamified -->
+    <section id="contact" class="contact">
+        <!-- Floating Social Orbs -->
+        <div class="social-orbs">
+            <div class="social-orb twitter-orb" data-social="twitter">
+                <span class="orb-icon">🐦</span>
+                <div class="orb-tooltip">Follow us on Twitter</div>
+            </div>
+            <div class="social-orb discord-orb" data-social="discord">
+                <span class="orb-icon">💬</span>
+                <div class="orb-tooltip">Join our Discord</div>
+            </div>
+            <div class="social-orb youtube-orb" data-social="youtube">
+                <span class="orb-icon">📺</span>
+                <div class="orb-tooltip">Watch our content</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="contact-title">Let's Build Something Amazing Together</h2>
+                <p class="contact-subtitle">
+                    Have a game idea, partnership opportunity, or just want to say hello?
+                    We're always excited to connect with fellow creators and gamers.
+                </p>
+            </div>
+
+            <!-- Interactive Contact Options -->
+            <div class="contact-content">
+                <!-- Gaming Console Style Contact Form -->
+                <div class="contact-console">
+                    <div class="console-header">
+                        <div class="console-lights">
+                            <div class="light red"></div>
+                            <div class="light yellow"></div>
+                            <div class="light green"></div>
+                        </div>
+                        <h3>📡 Communication Terminal</h3>
+                    </div>
+
+                    <div class="console-screen">
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="prompt">meowsay@games:~$</span>
+                                <span class="terminal-text">Ready to receive your message! Choose your preferred
+                                    communication method below:</span>
+                            </div>
+
+                            <div class="contact-options">
+                                <div class="contact-option" data-option="email">
+                                    <div class="option-icon">📧</div>
+                                    <div class="option-content">
+                                        <h4>Email Quest</h4>
+                                        <p>Send us a message and we'll respond within 24 hours!</p>
+                                        <div class="option-stats">
+                                            <span class="stat">Response Rate: 99%</span>
+                                            <span class="stat">Avg. Response Time: 4 hours</span>
+                                        </div>
+                                        <a href="mailto:hello@meowsay.com" class="option-button">
+                                            <span>Launch Email</span>
+                                            <div class="button-effect"></div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-option" data-option="social">
+                                    <div class="option-icon">🌐</div>
+                                    <div class="option-content">
+                                        <h4>Social Network</h4>
+                                        <p>Connect with our community across social platforms!</p>
+                                        <div class="social-buttons">
+                                            <a href="#" class="social-btn twitter-btn" data-social="twitter">
+                                                <span class="social-icon">🐦</span>
+                                                <span class="social-label">Twitter</span>
+                                                <div class="social-effect"></div>
+                                            </a>
+                                            <a href="#" class="social-btn discord-btn" data-social="discord">
+                                                <span class="social-icon">💬</span>
+                                                <span class="social-label">Discord</span>
+                                                <div class="social-effect"></div>
+                                            </a>
+                                            <a href="#" class="social-btn youtube-btn" data-social="youtube">
+                                                <span class="social-icon">📺</span>
+                                                <span class="social-label">YouTube</span>
+                                                <div class="social-effect"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Success Animation -->
+                    <div class="email-success" id="emailSuccess">
+                        <div class="success-animation">
+                            <div class="success-icon">✅</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>We'll get back to you soon. Thanks for reaching out!</p>
+                            <div class="success-particles">
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/meowsay.svg" alt="Meowsay Games" class="footer-logo">
+                    <span class="footer-title">Meowsay Games</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#games">Games</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Meowsay Games. Made with ❤️, lots of coffee ☕, and a sprinkle of magic ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

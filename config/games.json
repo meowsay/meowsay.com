@@ -1,0 +1,58 @@
+{
+  "games": [
+    {
+      "id": "neon-drift-racing",
+      "title": "Neon Drift Racing",
+      "description": "Experience futurihaha.",
+      "image": "assets/games/game1.jpg",
+      "tags": ["Racing", "Action", "Neon", "Drift"],
+      "status": "released",
+      "releaseDate": "2024-09-15",
+      "platforms": ["iOS", "Android", "Web"],
+      "links": {
+        "AppStore": "#",
+        "GooglePlay": "#",
+        "Web": "#"
+      },
+      "featured": true
+    },
+    {
+      "id": "mystic-forest-legends",
+      "title": "Mystic Forest Legends",
+      "description": "Step into the mysterious ancient forest and fight alongside magical creatures! Collect rare cards, build powerful teams, and write your legend in this fantastical strategic card game world.",
+      "image": "assets/games/game2.jpg",
+      "tags": ["Card Game", "Strategy", "Fantasy", "RPG"],
+      "status": "coming-soon",
+      "releaseDate": "2024-12-01",
+      "platforms": ["iOS", "Android"],
+      "links": {
+        "AppStore": "",
+        "GooglePlay": "",
+        "Web": "#"
+      },
+      "featured": true
+    },
+    {
+      "id": "pixel-cafe-tycoon",
+      "title": "Pixel Cafe Tycoon",
+      "description": " craft specialty beverages, serve diverse customers, and build the most popular pixel-art coffee empire.",
+      "image": "assets/games/game3.jpg",
+      "tags": ["Simulation", "Management", "Pixel Art", "Casual"],
+      "status": "beta",
+      "releaseDate": "2024-11-15",
+      "platforms": ["iOS", "Android", "Web"],
+      "links": {
+        "AppStore": "",
+        "GooglePlay": "",
+        "Web": "#"
+      },
+      "featured": true
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-09-29",
+    "version": "4.0.0",
+    "totalGames": 3,
+    "studioNote": "Meowsay Games is dedicated to creating engaging and memorable gaming experiences for players worldwide! 🎮"
+  }
+}
