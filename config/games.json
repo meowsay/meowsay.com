@@ -11,7 +11,7 @@
       "platforms": ["iOS", "Android"],
       "links": {
         "AppStore": "https://apps.apple.com/us/app/cute-blast-match-2-puzzle/id6755725803",
-        "GooglePlay": "#"
+        "GooglePlay": ""
       },
       "featured": true
     },
