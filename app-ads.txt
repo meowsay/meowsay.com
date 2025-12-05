@@ -797,3 +797,11 @@ zmaticoo.com,5135063,RESELLER
 zmaticoo.com,5135224,RESELLER
 zmaticoo.com,5135302,RESELLER
 zoomd.com,88478941,RESELLER
+toponad.com, b656f2f5f7334b00a986acc2b5bd782d, DIRECT, 1d49fe424a1a456d
+bidfuse.com, 113, RESELLER, 92bf3d4bb7d08ded
+adagio.io, 1531, RESELLER
+consumable.com, 2001399, RESELLER, aefcd3d2f45b5070
+lijit.com, 533787, RESELLER, fafdf38b16bf6b2b
+nexverse.ai, 24246, RESELLER
+sonobi.com, 5d7703694f, RESELLER, d1a215d9eb5aee9e
+video.unrulymedia.com, 2736329702851206590, RESELLER
