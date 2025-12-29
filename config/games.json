@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": "solitaire-things-game",
+      "title": "Solitaire Things Game",
+      "description": "A Relaxing Theme-Based Puzzle",
+      "image": "assets/games/solitaire-things-game.jpg",
+      "tags": ["Puzzle", "Casual", "Card", "Solitaire"],
+      "status": "released",
+      "releaseDate": "2025-12-25",
+      "platforms": ["iOS", "Android"],
+      "links": {
+        "AppStore": "",
+        "GooglePlay": "https://play.google.com/store/apps/details?id=com.meowsay.solitairethingsglobal",
+        "itch.io": "https://meowsaygames.itch.io/solitaire-things-game"
+      },
+      "featured": true
+    },
+    {
       "id": "cute-blast-match-2-puzzle",
       "title": "Cute Blast - Match 2 Puzzle",
       "description": "Tap & Match Adorable Icons",
