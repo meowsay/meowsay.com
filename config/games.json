@@ -10,7 +10,7 @@
       "releaseDate": "2025-12-25",
       "platforms": ["iOS", "Android"],
       "links": {
-        "AppStore": "",
+        "AppStore": "https://apps.apple.com/app/id6756788266",
         "GooglePlay": "https://play.google.com/store/apps/details?id=com.meowsay.solitairethingsglobal",
         "itch.io": "https://meowsaygames.itch.io/solitaire-things-game"
       },
