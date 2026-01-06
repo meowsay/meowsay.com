@@ -188,6 +188,9 @@ class MeowsayGamesWebsite {
             const data = await response.json();
             this.games = data.games || [];
             
+            // 更新游戏数量统计
+            this.updateGamesCount();
+            
             this.renderGames();
             
             if (loadingElement) loadingElement.style.display = 'none';
@@ -199,6 +202,70 @@ class MeowsayGamesWebsite {
                 loadingElement.innerHTML = '<p>Failed to load games. Please try again later.</p>';
             }
         }
+    }
+
+    // 更新游戏数量统计
+    updateGamesCount() {
+        const gamesCount = this.games.length;
+        
+        // 更新主页统计数字
+        const gamesCountElement = document.querySelector('.hero-stats .stat-item:first-child .stat-number');
+        
+        // 更新成就区域的游戏数量
+        const achievementNumber = document.querySelector('.achievement-card[data-achievement="games"] .achievement-number');
+        
+        const elementsToUpdate = [gamesCountElement, achievementNumber].filter(el => el);
+        
+        elementsToUpdate.forEach(element => {
+            element.setAttribute('data-target', gamesCount);
+            element.textContent = '0'; // 重置为0，准备重新动画
+        });
+        
+        // 重新触发计数器动画
+        const animateCounter = (counter) => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const increment = target / 100;
+            let current = 0;
+            const isPercentage = counter.textContent.includes('%');
+            
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    if (current > target) current = target;
+                    
+                    let displayValue;
+                    if (target >= 1000) {
+                        displayValue = Math.floor(current).toLocaleString();
+                    } else if (target < 10) {
+                        displayValue = current.toFixed(1);
+                    } else {
+                        displayValue = Math.floor(current);
+                    }
+                    
+                    counter.textContent = isPercentage ? displayValue + '%' : displayValue;
+                    
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    let displayValue;
+                    if (target >= 1000) {
+                        displayValue = target.toLocaleString();
+                    } else if (target < 10) {
+                        displayValue = target.toFixed(1);
+                    } else {
+                        displayValue = target;
+                    }
+                    
+                    counter.textContent = isPercentage ? displayValue + '%' : displayValue;
+                }
+            };
+            
+            updateCounter();
+        };
+        
+        // 触发所有元素的动画
+        elementsToUpdate.forEach((element, index) => {
+            setTimeout(() => animateCounter(element), 100 + (index * 50));
+        });
     }
 
     renderGames() {
