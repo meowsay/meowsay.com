@@ -17,6 +17,22 @@
       "featured": true
     },
     {
+      "id": "alpacadoku",
+      "title": "AlpacaDoku: Logic Puzzle",
+      "description": "A Relaxing Logic Puzzle Game",
+      "image": "assets/games/alpacadoku.jpg",
+      "tags": ["Puzzle", "Casual", "Logic", "Sudoku"],
+      "status": "released",
+      "releaseDate": "2026-01-31",
+      "platforms": ["iOS", "Android"],
+      "links": {
+        "AppStore": "",
+        "GooglePlay": "",
+        "Coming Soon": "#"
+      },
+      "featured": true
+    },
+    {
       "id": "cute-blast-match-2-puzzle",
       "title": "Cute Blast - Match 2 Puzzle",
       "description": "Tap & Match Adorable Icons",
