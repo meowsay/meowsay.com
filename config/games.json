@@ -26,9 +26,8 @@
       "releaseDate": "2026-01-31",
       "platforms": ["iOS", "Android"],
       "links": {
-        "AppStore": "",
-        "GooglePlay": "",
-        "Coming Soon": "#"
+        "AppStore": "https://apps.apple.com/us/app/alpacadoku-logic-puzzle/id6757661814",
+        "GooglePlay": "https://play.google.com/store/apps/details?id=com.meowsay.alpacadokuglobal"
       },
       "featured": true
     },
