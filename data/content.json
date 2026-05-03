@@ -1,0 +1,73 @@
+{
+  "languageConfig": {
+    "languages": ["en", "zh-CN", "ja", "ko"],
+    "default": "en"
+  },
+  "studio": {
+    "name": {
+      "en": "Meowsay Co., Ltd",
+      "zh-CN": "Meowsay Co., Ltd",
+      "ja": "Meowsay Co., Ltd",
+      "ko": "Meowsay Co., Ltd"
+    },
+    "headline": {
+      "en": "Crafting elegant incremental worlds.",
+      "zh-CN": "打造优雅而耐玩的增量世界。",
+      "ja": "洗練されたインクリメンタルの世界をつくる。",
+      "ko": "세련된 인크리멘털 세계를 만듭니다."
+    },
+    "philosophy": {
+      "en": "Pushing the boundaries of idle incremental games — crafting truly deep and fun experiences.",
+      "zh-CN": "探索放置增量游戏的边界，创造真正好玩的深度体验。",
+      "ja": "放置系インクリメンタルゲームの限界を切り拓き、本当に奥深くて楽しい体験を創り出す。",
+      "ko": "방치형 인크리멘탈 게임의 한계를 확장하고, 깊이 있으면서도 진짜 재미있는 경험을 만듭니다."
+    }
+  },
+  "nativeLanguageNames": {
+    "en": "EN",
+    "zh-CN": "中文",
+    "ja": "日本語",
+    "ko": "한국어"
+  },
+  "sections": {
+    "publishedGames": {
+      "en": "Our Games",
+      "zh-CN": "我们的游戏",
+      "ja": "作品一覧",
+      "ko": "게임 목록"
+    },
+    "viewDetails": {
+      "en": "View Details",
+      "zh-CN": "查看详情",
+      "ja": "詳細を見る",
+      "ko": "상세 보기"
+    },
+    "contact": {
+      "en": "Contact",
+      "zh-CN": "联系",
+      "ja": "お問い合わせ",
+      "ko": "문의"
+    },
+    "contactHint": {
+      "en": "For publishing, business, or collaboration inquiries.",
+      "zh-CN": "欢迎发行、商务与合作咨询。",
+      "ja": "パブリッシング、ビジネス、コラボのご相談はこちら。",
+      "ko": "퍼블리싱, 비즈니스, 협업 문의를 환영합니다."
+    },
+    "backToHome": {
+      "en": "Back to Home",
+      "zh-CN": "返回首页",
+      "ja": "ホームへ戻る",
+      "ko": "홈으로"
+    },
+    "gameNotFound": {
+      "en": "Game not found.",
+      "zh-CN": "未找到该游戏。",
+      "ja": "ゲームが見つかりません。",
+      "ko": "게임을 찾을 수 없습니다."
+    }
+  },
+  "contact": {
+    "email": "meowsaygames@outlook.com"
+  }
+}

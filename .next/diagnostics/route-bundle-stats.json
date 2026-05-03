@@ -1,0 +1,43 @@
+[
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 543704,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/0-dt-~wenqcgi.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0zns6.e53yxdu.js",
+      ".next/static/chunks/0ursk~c~2p0vl.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/10~x95jhs6ns3.js",
+      ".next/static/chunks/062hzijh369a_.js",
+      ".next/static/chunks/turbopack-03t6dc0ojl648.js"
+    ]
+  },
+  {
+    "route": "/games/[id]",
+    "firstLoadUncompressedJsBytes": 540502,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/0-dt-~wenqcgi.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0b~h5hi4z~9ps.js",
+      ".next/static/chunks/0ursk~c~2p0vl.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/10~x95jhs6ns3.js",
+      ".next/static/chunks/062hzijh369a_.js",
+      ".next/static/chunks/turbopack-03t6dc0ojl648.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 517757,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/0-dt-~wenqcgi.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0ursk~c~2p0vl.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/10~x95jhs6ns3.js",
+      ".next/static/chunks/062hzijh369a_.js",
+      ".next/static/chunks/turbopack-03t6dc0ojl648.js"
+    ]
+  }
+]
