@@ -1,6 +1,63 @@
 {
   "games": [
     {
+      "id": "runetide",
+      "name": {
+        "en": "RuneTide: Idle Fishing RPG",
+        "zh-CN": "垂钓四海",
+        "ja": "ルーンタイド：放置釣りRPG",
+        "ko": "룬타이드: 방치형 낚시 RPG"
+      },
+      "tags": {
+        "en": ["Idle", "Incremental", "Fishing", "RPG"],
+        "zh-CN": ["放置", "增量", "钓鱼", "RPG"],
+        "ja": ["放置", "インクリメンタル", "釣り", "RPG"],
+        "ko": ["방치형", "증분형", "낚시", "RPG"]
+      },
+      "description": {
+        "en": "Cast into forgotten seas, collect mythical catches and lost relics, and grow a legendary fleet in this atmospheric idle fishing RPG.",
+        "zh-CN": "你抛下鱼钩，却钓起一段溺亡的文字。那水波深处响起的，究竟是鱼尾摆荡，还是失语王朝最后的潮声。",
+        "ja": "神秘の海へ釣り糸を垂らし、伝説の獲物と失われた文明の遺物を集めながら、伝説の艦隊へ育てる放置釣りRPG。",
+        "ko": "신비로운 바다에서 방치형 낚시를 즐기며 전설의 어획물과 잃어버린 문명의 유물을 모아 전설적인 함대를 키우는 RPG입니다."
+      },
+      "banner": {
+        "en": "/images/runetide/en/banner.jpg",
+        "zh-CN": "/images/runetide/zh-CN/banner.jpg",
+        "ja": "/images/runetide/ja/banner.jpg",
+        "ko": "/images/runetide/ko/banner.jpg",
+        "default": "/images/runetide/en/banner.jpg"
+      },
+      "downloads": [
+        {
+          "label": {
+            "en": "App Store",
+            "zh-CN": "App Store",
+            "ja": "App Store",
+            "ko": "App Store"
+          },
+          "url": "https://apps.apple.com/us/app/runetide-idle-fishing-rpg/id6764012636"
+        },
+        {
+          "label": {
+            "en": "Google Play",
+            "zh-CN": "Google Play",
+            "ja": "Google Play",
+            "ko": "Google Play"
+          },
+          "url": "https://play.google.com/store/apps/details?id=com.meowsay.fishingyglobal"
+        },
+        {
+          "label": {
+            "en": "itch.io",
+            "zh-CN": "itch.io",
+            "ja": "itch.io",
+            "ko": "itch.io"
+          },
+          "url": "https://meowsaygames.itch.io/runetide"
+        }
+      ]
+    },
+    {
       "id": "spiritbone-idle-necromancer",
       "name": {
         "en": "Spiritbone: Idle Necromancer",
@@ -194,9 +251,9 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2024-09-29",
-    "version": "4.0.0",
-    "totalGames": 4,
+    "lastUpdated": "2026-05-05",
+    "version": "4.1.0",
+    "totalGames": 5,
     "studioNote": "Meowsay Games is dedicated to creating engaging and memorable gaming experiences for players worldwide."
   }
 }
